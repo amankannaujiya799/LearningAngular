@@ -1,0 +1,12 @@
+<p>data-binding works!</p>
+<p>Indian time zone</p>
+<h1>{{currentDate}}</h1>
+<br>
+<h1>Her we are using two way binding</h1>
+
+<input type="text" value="{{rollNo}}">
+<input type="text" [value]="rollNo">
+<input type="text" [(ngModel)] ="rollNo">
+
+
+<button (click)="showAlert()">Show alert</button>

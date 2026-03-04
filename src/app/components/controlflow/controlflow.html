@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-3">
+        <select [(ngModel)] ="selectedCaste" class="form-select">
+            <option>ABC</option>
+            <option>XYZ</option>
+            <option>AB</option>
+             <option>Other</option>
+
+        </select>
+        <div class="col-3">
+
+            <!-- angular me string case sencitive hotA HAI  -->
+            @if (selectedCaste == 'Other'){
+                <input type="text" class="form-control" placeholder="other value">
+
+            }
+            
+        </div>
+
+    </div>
+</div>
