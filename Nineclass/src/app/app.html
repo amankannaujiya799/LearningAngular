@@ -1,0 +1,30 @@
+<h1>Event</h1>
+
+<!-- <input type="text" (input)="handleEvent($event)"> -->
+<input type="text" (input)="handleEvent($event.type)">
+
+<input type="text" (change)="handleEvent($event.type)">
+
+<button (input)="handleEvent($event.type)">Click me</button>
+
+<!-- new select value change event happen -->
+
+<select  (change)="handleEvent($event.type)">
+
+   <option>MCA</option>
+    <option>MBA</option>
+     <option>BCA</option>
+
+
+</select>
+<!-- blur give vslue when chsnge then we click another of side of page -->
+<input type="text" (blur)="handleEvent($event.type)">
+
+<!-- we use of focus when click o focus  -->
+
+<input type="text" (focus)="handleEvent($event.type)">
+
+
+
+
+
