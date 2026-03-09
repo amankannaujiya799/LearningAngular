@@ -1,0 +1,23 @@
+<h1>Event Binding</h1>
+<button (click)="increment()">Count</button>
+<p>{{count}}</p>
+
+
+<h1>Function call in funcion</h1>
+
+<button (click)="handleClick()">Function me function call</button>
+
+<br>
+<button (click)="sum(10,20)">submit</button>
+<br>
+
+ <input (input)="onTyping($event)" placeholder="Type here" />
+
+
+ <div (mouseover)="onHover()" (mouseleave)="leave()" class="hover-box">
+
+    Hover text
+ </div>
+
+ <!-- blur event -->
+  

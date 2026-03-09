@@ -1,0 +1,16 @@
+<h1>conditional works!</h1>
+
+@if(isLogin){
+    <h1>Welcome Aman you login</h1>
+} @else{
+    <h2>Not login</h2>
+}
+<h1>using else if condition</h1>
+
+ @if(status === "pending"){
+    <h3>Order pending</h3>
+ } @else if(status === "processing"){
+    <h3>Order processing</h3>
+ } @else{
+    <h3>Unknown status</h3>
+ }
